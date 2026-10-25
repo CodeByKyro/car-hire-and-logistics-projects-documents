@@ -1,0 +1,27 @@
+/* CHITY GROUP design tokens. Source of truth: Color Specifications, Typography and Licensing, Graphic Language. */
+:root{
+  /* Color: core */
+  --color-deep-navy:#0B1220; --color-royal-blue:#1E6BFF; --color-sky-blue:#5AB8FF;
+  --color-slate-gray:#6B7280; --color-cloud-white:#F7F8FA;
+  /* Color: supporting */
+  --color-action-blue:#0D60FF; --color-slate-light:#8D93A0; --color-fold-shade:#143E90;
+  /* Color: interface neutrals */
+  --color-border-light:#D4D6DC; --color-surface-tint:#EAF0FA; --color-surface-dark:#19202D; --color-border-dark:#313743;
+  --gradient-brand:linear-gradient(45deg,#1E6BFF 0%,#5AB8FF 100%);
+  /* Typography */
+  --font-heading:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --text-h1:48px; --text-h2:32px; --text-h3:24px; --text-body:16px; --text-small:14px; --text-label:12px;
+  --leading-h1:1.1; --leading-h2:1.2; --leading-h3:1.3; --leading-body:1.5; --leading-label:1.4;
+  --tracking-h1:-0.02em; --tracking-h2:-0.01em; --tracking-label:0.05em;
+  /* Spacing, shape and layout */
+  --space-1:4px; --space-2:8px; --space-3:16px; --space-4:24px; --space-5:32px; --space-6:48px; --space-7:64px; --space-8:96px;
+  --radius-card:12px; --radius-control:8px; --control-height:44px;
+  --shadow-card:0 2px 8px rgba(11,18,32,.08);
+  --content-max-width:1200px; --grid-gutter:24px;
+}
+@media (max-width:640px){ :root{ --text-h1:40px; --text-h2:28px; } }
+/* Role aliases: light mode */
+:root{ --bg:var(--color-cloud-white); --text:var(--color-deep-navy); --text-secondary:var(--color-slate-gray); --link:var(--color-action-blue); --button-bg:var(--color-action-blue); --button-text:var(--color-cloud-white); }
+/* Role aliases: dark mode */
+.theme-dark{ --bg:var(--color-deep-navy); --text:var(--color-cloud-white); --text-secondary:var(--color-slate-light); --link:var(--color-sky-blue); --button-bg:var(--color-sky-blue); --button-text:var(--color-deep-navy); }
